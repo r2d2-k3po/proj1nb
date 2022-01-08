@@ -46,3 +46,6 @@ print(df15.count())
 y2019 = df15.loc[(df15.연도 == 2019), :]
 y2019 = df15.loc[(df15.A과목 == 0.000), :]
 print(y2019.head())
+
+
+dict(zip(score1_mean15.columns[-5:], df19.columns[-5:]))
