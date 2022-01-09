@@ -52,3 +52,8 @@ dict(zip(score1_mean15.columns[-5:], df19.columns[-5:]))
 
 ![Alt hat](./image/SortingHat.jpg)
 
+score2_mean19 = df19[df19['학생구분']=='재학생'].groupby(['학과']).agg(dict.fromkeys(df19.columns[-5:], 'mean')).round(6)
+print(score2_mean19)
+
+import matplotlib.pyplot as plt
+import seaborn as sns
