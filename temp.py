@@ -57,3 +57,7 @@ print(score2_mean19)
 
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+import numpy as np
+proba = kn.predict_proba(val_scaled)
+print(np.round(proba, decimals=4))
